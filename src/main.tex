@@ -1,0 +1,110 @@
+%! Author = Paulo
+%! Date = 5/13/2021
+
+\documentclass{paulo_cv}
+\usepackage{babel}
+
+\setname{Paulo}{Sarrin Cepeda}
+\setaddress{Lima/Peru}
+\setmobile{+51 931 020 809}
+\setmail{paulocesarsarrin@gmail.com}
+\setposition{Analista de Ciberseguridad} %ignored for now
+\setlinkedinaccount{https://www.linkedin.com/in/paulocsarrinc/} %you can play with color of the template (red is also nice..)
+\setgithubaccount{https://github.com/PauloCSC} %you can play with color of the template (red is also nice..)
+\setthemecolor{bleudefrance} %you can play with color of the template (red is also nice..)
+
+\begin{document}
+%Set variables
+%You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
+%Create header
+    \headerview
+    \vspace{1ex}
+%Sections
+%
+% Summary
+    \addblocktext{Resumen}{%
+        Alumno del 10mo ciclo de la carrera de Ingeniería de Sistemas en la Universidad Nacional de Ingeniería perteneciente
+        al quinto superior de mi promoción universitaria. Amante de la ciberseguridad y hacker ético enfocado en desarrollar
+        mis habilidades en el ámbito de la ciberseguridad y ayudar a las empresas a mejorar la securización de sus procesos y
+        activos digitales. Me gusta asumir retos y trabajar en equipo.
+    }
+%
+%Education
+    \section{Educaci\'on}\label{sec:educacion}
+    \datedexperience{Sophos EDR Certified Admin}{Marzo del 2021}
+    \explanation{Sophos - Certificaci\'on}
+%    \explanationdetail{\coloredbullet\ %
+%    Formación práctica para llevar a cabo tareas de Threat Hunting y aprender cómo detener a los atacantes
+%    durante un ataque, detectados con Sophos EDR
+%    }
+    \datedexperience{Cyber Security Foundation Professional Certificate}{Diciembre del 2020}
+    \explanation{Certiprof - Certificaci\'on - ID: 54283956}
+    \datedexperience{Certified Penetration Testing Engineer}{Mayo del 2020}
+    \explanation{Mile2 - Certificaci\'on - ID: 1877000}
+    \datedexperience{Universidad Nacional de Ingenier\'ia}{2016-2021}
+    \explanation{Bachillerato en Ingenier\'ia de Sistemas}
+
+%
+% Experience
+    \section{Experiencia}\label{sec:experiencia}
+    %
+    \datedexperience{Organización de Estados Americanos}{Noviembre del 2020 – Actualidad / Washington - EE.UU.}
+    \explanation{Consultor externo en CSIRTAméricas del Programa de ciberseguridad en CICTE}
+    \explanationdetail{
+        \coloredbullet \ Miembro de la implementación y desarrollo de la herramienta NGEN para la gestión de incidentes
+        informáticos en CSIRT’s y CERT’s nacionales/estatales de la red internacional de CSIRTAméricas. \\
+        \coloredbullet \ Auditor principal, responsable de la ejecución de servicios de pentesting a CSIRT’s y CERT’s nacionales.}
+    %
+    \datedexperience{enHacke S.A.C.}{Setiembre del 2019 – Abril del 2021 / Lima - Per\'u}
+    \explanation{Analista de ciberseguridad}
+    \explanationdetail{
+        \coloredbullet \ Responsable (y apoyo) en ejecución de servicios de ciberseguridad a empresas del sector financiero, salud,
+        productivo y educativo. Servicios que consisten en evaluar el nivel de ciberseguridad de infraestructura on premise,
+        infraestructura on cloud, aplicativos web y móviles.\\
+        \coloredbullet \ Apoyo en la ejecución de servicios de análisis forense para empresas víctimas de ciberataques dirigidos como ransomware,
+        spear pishing y estafa digital.
+    }
+    \datedexperience{Ministerio de Trabajo y Promoción del empleo}{Marzo – Setiembre del 2019 / Lima - Per\'u}
+    \explanation{Practicante preprofesional en el Área de Estadística e Informática}
+    \explanationdetail{
+        \coloredbullet \ Apoyo en las labores de Soporte técnico, Administración de servidores y redes de computadoras.
+    }
+%
+%% Logros
+    \section{Logros}\label{sec:logros}
+    \datedexperience{OAS Cyber Challenge}{Diciembre del 2019 / Cartagena - Colombia}
+    \explanationdetail{1° puesto general \cpshalf Concurso de ciberseguridad en modalidad jeopardy entre selecciones nacionales de Brasil, Colombia, Republica Dominicana, Costa Rica y Per\'u}
+    \datedexperience{Ibero-American Cybersecurity Challenge }{Diciembre del 2018 / Cartagena - Colombia}
+    \explanationdetail{2° puesto general \cpshalf Concurso de ciberseguridad en modalidad jeopardy entre selecciones nacionales de Espa\~na, Colombia, Republica Dominicana, Costa Rica y Per\'u}
+
+%    \newcommand{\extraone}{%
+%        \textbf{OAS Cyber Challenge | } \par %replace this part with actual text
+%    }
+%    %
+%    \newcommand{\extratwo}{%
+%        \lipsum[1][9-10]\par %replace this part with actual text
+%    }
+%    %
+%    \newcommand{\extrathree}{%
+%        \lipsum[1][11-12]%replace this part with actual text
+%    }
+%    %
+%    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree}
+%    %
+%    \createbullets{\listofextras}
+%
+% Skills
+    \section{Habilidades}\label{sec:habilidades}
+    %
+    \newcommand{\skillone}{\createskill{Ciberseguridad}{\textbf{\emph{Experienced:}} \ \  Pentesting web \cpshalf Pentesting en red \cpshalf Pentesting Android \ }}
+    \newcommand{\skilloned}{\createskill{\ }{ \textbf{\emph{Familiar:}} \ \  Pentesting iOS \cpshalf Analisis Forense \cpshalf Ciberinteligencia}}
+    %
+    \newcommand{\skilltwo}{\createskill{Seguridad de la informaci\'on}{ ISO 27001 }}
+    %
+    \newcommand{\skillthree}{\createskill{Lenguajes de programaci\'on}{\textbf{\emph{Experienced:}} \ \  Python \cpshalf NodeJS \cpshalf Bash \ \ \textbf{\emph{Familiar:}} \ \  C/C++ \cpshalf Go \cpshalf Java \cpshalf C\#}}
+    %
+    \newcommand{\skillfive}{\createskill{Lenguajes}{\textbf{\emph{Nativo:}} \ \  Espa\~nol \ \ \textbf{\emph{Intermedio:}} \ \ English}}
+    %
+    \createskills{\skillone, \skilloned, \skilltwo, \skillthree, \skillfour, \skillfive}
+\end{document}
+
